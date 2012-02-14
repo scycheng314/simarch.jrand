@@ -33,8 +33,8 @@ import it.uniroma2.sel.simlab.jrand.objectStreams.numericStreams.NumericStream;
 import it.uniroma2.sel.simlab.math.functions.cumulativeFunctions.ExponentialCumulativeFunction;
 import it.uniroma2.sel.simlab.math.functions.densityFunctions.ExponentialDensityFunction;
 
-/** Defines a numeric stream that presents pseudorandom properties and that is
- * distributed exponentially
+/** Defines a numeric stream that presents pseudorandom properties with a Weibull 
+ * distribution to represent the stream.
  *
  * @author  Sonia Forconi
  */

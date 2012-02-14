@@ -31,17 +31,17 @@ import it.uniroma2.sel.simlab.jrand.objectStreams.numericStreams.NumericStream;
 import it.uniroma2.sel.simlab.math.functions.cumulativeFunctions.ExponentialCumulativeFunction;
 import it.uniroma2.sel.simlab.math.functions.densityFunctions.ExponentialDensityFunction;
 
-/** Defines a numeric stream that presents pseudorandom properties and that is
- * distributed exponentially
+/** Defines a numeric stream that presents pseudorandom properties with a Truncated Pareto 
+ * distribution to represent the stream.
  *
  * @author  Sonia Forconi
  */
 
 public class TruncatedParetoStream extends PseudoRandomGenerator {
 	
-	private double k;
-	private double alfa;
-	private double m;
+	private double k; //scale parameter
+	private double alfa; //shape parameter
+	private double m; //truncated parameter
 	
 	/** Creates a new instance of TruncatedParetoStream */
     public TruncatedParetoStream(final NumericStream s, final double k, final double alfa, final double m) {
